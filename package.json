@@ -1,0 +1,28 @@
+{
+  "name": "express-simple-crud",
+  "version": "1.0.0",
+  "description": "express-simple-crud",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RarJar/Express-Mongo-Simple-CRUD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RarJar/Express-Mongo-Simple-CRUD/issues"
+  },
+  "homepage": "https://github.com/RarJar/Express-Mongo-Simple-CRUD#readme"
+}
