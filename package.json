@@ -12,7 +12,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "make:controller": "node ./app/helpers/generateController.js",
+    "make:model": "node ./app/helpers/generateModel.js"
   },
   "repository": {
     "type": "git",
