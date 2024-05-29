@@ -13,13 +13,12 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true })); //for post request data middleware
 
 mongoose
-  .connect(process.env.DB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.DB_URL)
   .then(() => {
     app.listen(process.env.PORT, () => {
-      console.log("Server is running on port 8000 and connected to MongoDB");
+      console.log(
+        `Server is running on port ${process.env.PORT} and connected to MongoDB`
+      );
     });
   })
   .catch((error) => {

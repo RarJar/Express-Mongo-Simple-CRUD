@@ -24,7 +24,7 @@ function generateController(controllerName) {
 
   fs.writeFileSync(controllerFile, controllerTemplate);
 
-  console.log(`Controller ${controllerName} created successfully!`);
+  console.log(`${controllerName} controller created successfully!`);
 }
 
 // Extracting controller name from command line arguments
