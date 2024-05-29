@@ -1,10 +1,19 @@
 const express = require("express");
 const router = express.Router();
 const BlogController = require("../app/controllers/BlogController.js");
+const {
+  BlogCreateValidator,
+  validatorMessages,
+} = require("../app/validations/BlogCreateValidator.js");
 
 router.get("/", BlogController.index);
 router.get("/blog/create", BlogController.create);
-router.post("/blog/store", BlogController.store);
+router.post(
+  "/blog/store",
+  BlogCreateValidator,
+  validatorMessages,
+  BlogController.store
+);
 router.get("/blog/:id", BlogController.show);
 router.get("/blog/:id/edit", BlogController.edit);
 router.post("/blog/update", BlogController.update);

@@ -8,6 +8,7 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "express-ejs-layouts": "^2.5.1",
+    "express-validator": "^7.1.0",
     "mongoose": "^8.4.0"
   },
   "scripts": {
@@ -15,7 +16,8 @@
     "start": "nodemon server.js",
     "make:controller": "node ./app/helpers/generateController.js",
     "make:model": "node ./app/helpers/generateModel.js",
-    "make:schema": "node ./app/helpers/generateSchema.js"
+    "make:schema": "node ./app/helpers/generateSchema.js",
+    "make:validator": "node ./app/helpers/generateValidator.js"
   },
   "repository": {
     "type": "git",
